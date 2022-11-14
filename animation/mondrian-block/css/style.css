@@ -2,3 +2,9 @@ body {
     margin: 0;
     overflow: hidden;
 }
+
+button {
+    position: absolute;        
+    left: 10px;
+    bottom: 10px;
+}
