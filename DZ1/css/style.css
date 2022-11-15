@@ -1,0 +1,36 @@
+body {
+    background-color: #d5d5d5;
+}
+
+main {
+    margin: 3rem 0;
+}
+
+.container {
+    width:100%;
+    max-width:1250px;
+    margin:auto;
+}
+input {
+    min-width: 450px;
+    min-height: 25px;
+}
+
+button {
+    min-height: 25px;
+}
+
+#sqr-d {
+    margin: 1rem 0;
+    border: 1px solid rgb(12, 133, 76);
+    width: 0;
+    transition: 0.5s;
+}
+
+#radius-d{
+    margin: 1rem 0;
+    border: 1px solid rgb(12, 133, 76);
+    width: 0;   
+    border-radius: 99999999px;
+    transition: 0.5s;
+}

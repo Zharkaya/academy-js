@@ -33,12 +33,13 @@ window.onload = () =>{
     }
 
     function fillSqr(x1, y1, x2, y2) {         
-
+        context.beginPath();   
         context.rect(x1,y1, x2 - x1, y2 - y1);
         context.fill();
         context.lineWidth = 8;
         context.strokeStyle = "#0f0408";
-        context.stroke();        
+        context.stroke();    
+        context.closePath();    
 
     }
 
