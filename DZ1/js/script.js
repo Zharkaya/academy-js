@@ -56,13 +56,9 @@ let radius = () => {
             let sOut = document.getElementById("radius-out");
             let s = Math.PI * Math.pow(radius.value, 2);
             let radiusD = document.getElementById("radius-d");
-
             radiusD.style.width = d + "px";
-            radiusD.style.height = d + "px";
-            
+            radiusD.style.height = d + "px";            
             sOut.innerHTML = "Площадь этой окружности " + s + " px2";
-
-
         }
     })
 }
@@ -78,8 +74,7 @@ let km = () => {
         if(S.value || T.value) {
             //V = S / T;
             let V = S.value/T.value;
-            document.getElementById("v-out").innerHTML = "Скорость движения должна быть " + V + " км\\ч"
-
+            document.getElementById("v-out").innerHTML = "Скорость движения должна быть " + V + " км\\ч";
         }
     })
 
@@ -116,3 +111,47 @@ let gb = () => {
 }
 
 gb();
+
+//8
+let chok = () => {
+    let money = document.getElementById("money");
+    let price = document.getElementById("price");
+    let btn = document.getElementById("price-sbn");
+
+    btn.addEventListener("click", ()=> {
+        if(money.value || price.value) {
+            let chok = Math.floor(money.value/price.value);
+            let s = price.value*chok
+            let sda = money.value - s;
+            document.getElementById("price-out").innerHTML = "Вы можете купить " + chok + " шоколадок. Ваша сдача будет " + sda + " рублей";
+        }
+    })
+}
+
+chok();
+
+//9
+let number = () =>{
+    let number = document.getElementById("number");
+    let btn = document.getElementById("number-sbn");
+    btn.addEventListener("click", ()=>{
+        if(number.value) {
+           let out = number.value.split("").reverse();           
+           document.getElementById("number-out").innerHTML = out.join("");
+        }
+    })
+}
+number();
+
+//10
+let even = () => {
+    let number = document.getElementById("even");
+    let btn  = document.getElementById("even-btn");
+    btn.addEventListener("click", ()=>{
+        if(number.value) {
+            let out = number.value%2 == 0 ? "Четное" : "Не четное";
+            document.getElementById("even-out").innerHTML = out;
+        }
+    })
+}
+even();
