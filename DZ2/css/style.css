@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "inkulinati";
+    src: url(./Inkulinati.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #505050;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.animatiom-text {
+    color: #fff;
+    margin: auto;
+    font-size: 5rem;
+    font-family: "inkulinati";
+}
+
+.author {
+    font-size: 2rem;
+    text-align: right;
+    display: block;
+    width: 100%;
+}
+
+.new-year-time {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    justify-content: space-between;
+}
+.new-year-time {
+    text-align: center;
+}    
+.time-stap {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.time-item {
+    width: 23%;    
+}
+.time-text {
+    background-color: #9b9d9d;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.days, .hours, .minutes, .seconds {
+    font-size: 3rem;
+}
+
+.list-block {
+    margin: auto;
+}
