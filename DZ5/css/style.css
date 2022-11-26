@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background: rgb(36, 36, 36);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh; 
+    display: flex;   
+}
+a {
+    color: #fff;
+    transition: 0.5s;
+}
+a:hover {
+    color: rgb(31, 182, 81);  
+}
+.form-wraper {
+    margin: auto;
+}
+
+form {
+    width:  500px;
+}
+
+.form-group {
+    margin-top: 1rem;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.form-group label:not(:last-child) {
+    display: block;
+    margin-right: 1rem;
+}
+
+.form-group input {
+    background: transparent;
+    border: 1px solid #fff;   
+    color: #fff;
+    padding: 0;
+    height: 25px;
+    padding: 0.5rem;  
+    transition: 0.5s;  
+    
+}
+.form-group input[type="text"],  .form-group input[type="password"], .form-group select, .form-group [type="number"]{
+    width: 100%;
+}
+.form-group select{ 
+    background: rgb(36, 36, 36);
+    color: #fff;
+    height: 25px;
+}
+.form-group input[type="checkbox"], .form-group input[type="radio"] {
+    margin: 0;
+    padding: 0;
+    height: fit-content
+}
+
+.form-group input:focus-visible {
+    outline: 1px solid rgb(31, 182, 81);  
+    border: none; 
+}
+
+.form-group button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.form-group button:hover {
+    background-color: rgb(11, 71, 31)
+}
+.hide {
+    display: none !important;
+}
+.inline-group {
+    display: flex;
+    justify-content: space-between;   
+}
+.inline-group .form-group {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;     
+}
+td {
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+#formcolor .inline-group .form-group {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.colors {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;    
+    width: 500px;
+    justify-content: space-between;
+}
+
+.color-item {
+    width: 45%;
+    margin-top: 0.5rem;    
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+.color {
+    width: 25px;
+    height: 25px;
+    border:1px solid #fff
+
+}
