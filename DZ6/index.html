@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body> 
+    <header>
+        <div class="container header-wrapper">
+            <div class="title">
+                Current Weather
+            </div>
+            <form action="" id="form">
+                <input type="text" name="city" id="City" placeholder="city">
+               <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </header>    
+    <div class="container">
+        <div class="weather-block current">            
+            Город не выбран            
+        </div>
+        <div class="weather-block">
+            <div class="title">
+                Hourly
+            </div>
+            <div class="hourly-info">
+                <div class="hourly-left">
+                    <div class="time"></div>
+                    <div class="img-h"></div>
+                    <div class="h-weather">Forecast</div>
+                    <div class="h-tem">Temp (&deg;C)</div>
+                    <div class="h-wind">Wind (km/h)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/weather.js"></script>
+</html>
