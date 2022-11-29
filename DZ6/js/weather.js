@@ -10,16 +10,20 @@ window.onload = ()=> {
     let life = getCookie("_life");
     let data = localStorage.getItem("_data");
     if(userCity && life) {
-        if(life && data) {
+        if(data) {
             data = JSON.parse(data);            
             CurrentWeather(data.city.timezone, data.city.name, data.list[0]);
             for (let i = 1; i < 7; i++){
                 getHourlyWeather(data.city.timezone, data.list[i])             
             }
             return; 
-        }          
+        } 
         getWeather(userCity);
-        return;                      
+        return;                         
+    }
+    if(userCity) {
+        getWeather(userCity);
+        return;
     }
 }
 
@@ -43,7 +47,7 @@ function getWeather(city) {
                     for (let i = 1; i < 7; i++){
                         getHourlyWeather(data.city.timezone, data.list[i]) 
                     }
-                    setCookie('_u-city', data.city.name, {secure: true, 'max-age': 3600*24});
+                    setCookie('_u-city', data.city.name, {secure: true, 'max-age': 3600*24*2});
                     setCookie('_life', true, {secure: true, 'max-age': 3600*3});      
                     localStorage.setItem("_data", JSON.stringify(data));
                 }
