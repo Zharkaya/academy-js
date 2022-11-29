@@ -48,7 +48,7 @@ function getWeather(city) {
                         getHourlyWeather(data.city.timezone, data.list[i]) 
                     }
                     setCookie('_u-city', data.city.name, {secure: true, 'max-age': 3600*24*2});
-                    setCookie('_life', true, {secure: true, 'max-age': 3600*3});      
+                    setCookie('_life', true, {secure: true, 'max-age': 3600});      
                     localStorage.setItem("_data", JSON.stringify(data));
                 }
                 if (data.cod == 404) {
