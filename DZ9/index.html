@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container row">
+        <div class="col">
+            <h2>Enter JSON data:</h2>
+            <textarea name="" id="input">{"superhero": [{"id": 1233, "name": "Tony Stark", "nickname": "Iron Man"},{"id": 1234, "name": "Clint Barton", "nickname": "Hawkeye"}]}</textarea>
+        </div>
+        <div class="flex-col">
+            <span id="err"></span>
+            <button id="formatted">Format</button>
+            <button id="minify">Minify/Compres</button>
+        </div>            
+        <div class="col">
+            <h2>Formatted JSON date:</h2>
+            <textarea name="" id="output"></textarea>
+        </div>
+    </div>
+</body>
+    <script src="./js/jsonformatter.js"></script>
+</html>

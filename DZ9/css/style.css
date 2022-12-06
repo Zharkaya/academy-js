@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: #505050;
+    padding: 1rem 0;
+}
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col {
+    width: 40%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    height: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 170px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0.5rem 0;
+}
+#err {
+    display: block;
+    width: 90%;
+    text-align: center;
+    color: rgb(221, 87, 87);
+    margin: 1rem 0;
+}
+button:hover {
+    background-color: #fff;
+    color: #505050;
+}
+
+textarea {
+    background-color: transparent;
+    width: 100%;
+    color: #fff;    
+    border: 1px solid #fff;
+    min-height: 80vh;
+    overflow: auto;
+}
+
+.title {
+    text-align: center;
+}
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.users .user {
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.5s;    
+    width: 25%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.users .user:hover {
+    background: #fff;
+    color: #505050;
+}
+
+.user-info table {
+    width: 100%;
+    border: 1px solid #fff;
+}
+.user-info table td {
+    border: 1px solid #fff;
+    padding: 0.5rem;
+}
+.user-info button {
+    width: 100%;
+    margin-top: 1rem;
+    color: #505050;
+    background: #fff;
+    border: 1px solid #505050;
+}
+.user-info button:hover {
+    color: #fff;
+    background: #505050;
+    border: 1px solid #fff;
+}
+.post-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post-wrap .post {
+    width: 30%;
+    border: 1px solid #fff;
+    margin-top: 1rem;
+    padding: 1rem;
+}
