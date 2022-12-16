@@ -1,0 +1,44 @@
+body {
+    background: rgb(48, 48, 48);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+a {
+    color: #fff;
+}
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.list   {
+    margin: auto;
+    max-width: 800px;
+}
+
+#Folder li:hover {    
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+#Books li {
+    cursor: pointer;
+    padding: 0.3rem 0.3rem;
+}
+
+li.active {
+    background: rgb(231, 112, 0);    
+}
+
+.text {
+    padding: 0.5rem 0;
+    border-top: 1px solid #fff;
+}
