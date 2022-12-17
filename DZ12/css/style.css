@@ -1,0 +1,74 @@
+body {
+    background: rgb(87, 87, 87);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.wrapper {
+    margin: auto;
+}
+.generator {
+    border-bottom: 1px solid #fff;
+}
+.length {
+    width: 35px;
+    margin-left: 1rem;
+}
+.form-gr{
+    margin: 0.5rem 0;
+}
+.form-gr input {
+    margin-right: 0.5rem;
+}
+
+.form-gr button {
+    background: #fff;
+    border: 1px solid #fff;    
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+#Result {
+    padding: 2rem 0;
+}
+.grid {
+    width: 100%; 
+    display: flex;  
+    position: relative;
+}
+.grid .col {
+    display: inline-block;
+    height: 100vh;
+    position: relative;
+    width: 50%;
+}
+.grid .col .block {
+    height: 50%;
+}
+.top-bottom {
+    position: absolute;
+    z-index: 100;
+    background-color: darkgray;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    color: white;
+    cursor: row-resize;
+}
+.left-right {
+    position: absolute;
+    width: 20px;
+    font-size: 1.5rem;
+    height: 100%;
+    right: 0;
+    z-index: 101;
+    background-color: darkgray;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    cursor: col-resize;
+}
